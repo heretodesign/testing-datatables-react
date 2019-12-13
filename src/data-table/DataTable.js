@@ -1,4 +1,5 @@
 import React from 'react';
+
 const DataTable = props => {
    return (
       <table>
@@ -9,7 +10,17 @@ const DataTable = props => {
                )}
             </tr>
          </thead>
+         <tbody>
+            {props.rows.map(row =>
+               <tr key={row.id}>
+                   {props.cols.map(col =>
+                       <td key={col.name}>{row[col.name]}</td>
+                   )}
+               </tr>
+            )}
+         </tbody>
       </table>
   );
 }
+
 export default DataTable;
