@@ -1,0 +1,11 @@
+/************************ What to Test for  ********************************/
+Based on the given specification, 
+we have to test for two important things:
+If there is data and if there is no data.
+
+/************************ Assertions  ************************************/
+The way I know that they are not being rendered is by two assertions: 
+Number of cells in a row must be equal to number of columns in data table; 
+and content of each cell must match the content of three entries in the data.
+
+/************************ Assertions  ************************************/
